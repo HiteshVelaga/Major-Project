@@ -1,0 +1,59 @@
+<!doctype html> 
+<html> 
+    <head>
+    <style>
+    div {
+      background-color: rgb(100, 100, 100);
+      width: 300px;
+      border: 15px rgb(41, 38, 38);
+      padding: 50px;
+      margin: 20px;
+    }
+    </style>
+    </head>
+    <body>
+        <div>
+        <table>
+        {% for key, segment in prediction.items() %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ segment }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+        </div> 
+       <br>
+       <div>
+        <table>
+        {% for key, segment in tv1.items() %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ segment }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+        </div>
+        <br>
+        <div>
+        <table>
+        {% for key, segment in tv2.items() %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ segment }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+        </div>
+        <br>
+        <div>
+        <table>
+        {% for key, segment in tv3.items() %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ segment }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+        </div>
+   </body> 
+</html> 
